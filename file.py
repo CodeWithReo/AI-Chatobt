@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 
 st.set_page_config(
-    page_title="Our Chatbot",
+    page_title="Chatbot",
     page_icon="🤖"
 )
 
