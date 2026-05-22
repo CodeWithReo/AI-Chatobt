@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="Chatbot",
     page_icon="🤖"
 )
-
+api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key="API_KEY")
 model=genai.GenerativeModel("models/gemini-2.5-flash")
 
