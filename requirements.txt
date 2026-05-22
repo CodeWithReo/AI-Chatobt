@@ -1,3 +1,4 @@
 streamlit
-Google AI Studio API key
-
+google-generativeai
+python-dotenv
+Pillow
