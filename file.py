@@ -1,12 +1,13 @@
 import streamlit as st
 import google.generativeai as genai
+import os
 
 st.set_page_config(
     page_title="Our Chatbot",
     page_icon="🤖"
 )
 
-genai.configure(api_key="AIzaSyDkEg4_l-_MSroxptiICcZaA65omsUtAkQ")
+genai.configure(api_key=os.getenv("API_KEY"))
 model=genai.GenerativeModel("models/gemini-2.5-flash")
 
 st.title("🌐 Personal AI Chatbot 🌐")  # change the name of chatbot from here
