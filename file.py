@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="🤖"
 )
 
-genai.configure(api_key=("API_KEY"))
+genai.configure(api_key="API_KEY")
 model=genai.GenerativeModel("models/gemini-2.5-flash")
 
 st.title("🌐 Personal AI Chatbot 🌐")  # change the name of chatbot from here
